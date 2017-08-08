@@ -19,11 +19,6 @@
     <Content Include="wwwroot\js\azure-storage.blob.js" />
     <Content Include="wwwroot\js\azure-storage.common.js" />
     <Content Include="wwwroot\js\blobzone.js" />
-    <Content Include="wwwroot\js\BlobZoneModZone-template.handlebars" />
-    <Content Include="wwwroot\js\BlobZoneModZone-template.html" />
-    <Content Include="wwwroot\js\dropzone.js" />
-    <Content Include="wwwroot\js\processed-file-bar-template.handlebars" />
-    <Content Include="wwwroot\js\processed-file-bar-template.html" />
     <Content Include="wwwroot\js\templates\BlobZoneModZone-template.html" />
     <Content Include="wwwroot\js\templates\processed-file-bar-template.html" />
   </ItemGroup>
