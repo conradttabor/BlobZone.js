@@ -65,7 +65,7 @@ namespace LargeFileUploadExample.Controllers
         private string GetAccountSASToken()
         {
             // To create the account SAS, you need to use your shared key credentials. Modify for your account.
-            const string ConnectionString = "DefaultEndpointsProtocol=https;AccountName=ctabor;AccountKey=E/KReZjYmf8Frx24YisHsBlq6oMkyUKOOozzgpu4ARDDB6GmfDA8n4bknH6aSF/+tCesodvM/s4XYdIo9UJZtg==;EndpointSuffix=core.windows.net";
+            const string ConnectionString = "<connectionstring>";
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConnectionString);
 
             // Create a new access policy for the account.
