@@ -1,0 +1,28 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">Upload Files</div>
+    <div class="panel-body">
+        <h4>Select files from your computer</h4>
+
+        <form action="#" method="post" enctype="multipart/form-data" id="js-upload-form-{{Index}}">
+            <div class="form-inline">
+                <div class="form-group">
+                    <input type="file" name="file" id="js-upload-files">
+                </div>
+                <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+            </div>
+        </form>
+
+        <h4>Or drag and drop files below</h4>
+
+        <div class="bz-upload-drop-zone" id="blob-zone-{{Index}}" style="position: relative">
+            <div style="position:relative; text-align:match-parent; margin-top: 2em">
+                <p class="glyphicon glyphicon-upload" style="font-size: 75px"></p>
+            </div>
+        </div>
+
+        <div class="js-upload-finished">
+            <h3>Processed files</h3>
+            <div class="list-group" id="uploaded-files-{{Index}}"></div>
+        </div>
+    </div>
+</div>

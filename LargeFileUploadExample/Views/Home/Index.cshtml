@@ -1,0 +1,48 @@
+﻿@model UploadViewModel
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/blobzone.css">
+</head>
+<body>
+    @*<div class="BlobZoneModForm" data-blob-uri="@Model.BlobUri" data-sas-token="@Model.SaSToken" data-blob-container-name="@Model.ContainerName" data-file-location="conradsfiles/mytestingfiles/" data-complete-function=MyFunction()></div>*@
+    <div id="MyId"></div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="~/js/azure-storage.common.js"></script>
+<script type="text/javascript" src="~/js/azure-storage.blob.js"></script>
+<script type="text/javascript" src="~/js/blobzone.js"></script>
+<script>
+    function MyFunction() { };
+
+    window.onload = function() {
+        var BZ1 = BlobZoneInitializer({
+            blobUri: "@Model.BlobUri",
+            dirtySaSToken: "@Model.SaSToken",
+            containerName: "@Model.ContainerName",
+            fileLocation: "conradsfiles/mytestingfiles/",
+            zoneDivId: "MyId",
+            onSuccess: function () {
+                alert("success");
+
+            }
+        });
+
+        console.log(BZ1);
+        BZ1.Initialize();
+
+        
+    };
+    
+</script>
+
+
+
+
+
+
+
+
